@@ -1,0 +1,36 @@
+{
+	"info": {
+		"_postman_id": "830c787f-01cc-47c6-8de7-90273a279aa2",
+		"name": "InversoresCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34041440"
+	},
+	"item": [
+		{
+			"name": "Facturas",
+			"item": [
+				{
+					"name": "GetAllFacturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/api/facturas/getAll",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"facturas",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Lista de todos los métodos relacionados a las facturas del micro de inversores"
+		}
+	]
+}
