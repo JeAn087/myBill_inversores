@@ -21,16 +21,16 @@ INSERT INTO Empresas (direccionDomicilio, departamentoDomicilio, ciudadDomicilio
 INSERT INTO Empresas (direccionDomicilio, departamentoDomicilio, ciudadDomicilio, pais, celular, email, numeroCuenta, razonSocial) VALUES ('Carrera 12 #7-33', 'Santander', 'Bucaramanga', 'Colombia', '3089990011', 'empresa9@mail.com', '9012345678', 'Maderas del Norte S.A.S.');
 INSERT INTO Empresas (direccionDomicilio, departamentoDomicilio, ciudadDomicilio, pais, celular, email, numeroCuenta, razonSocial) VALUES ('Av. Libertad #18-22', 'Magdalena', 'Santa Marta', 'Colombia', '3090001122', 'empresa10@mail.com', '0123456789', 'Turismo Caribe S.A.');
 
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-15', 'DEFINIDO', '2025-11-02', 'Calle 10 #12-30, Popayán', 'Carrera 8 #14-20, Cali', 1500000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-10', 'POR_DEFINIR', '2025-11-01', 'Cra 7 #8-20, Bogotá', 'Av 3N #25-45, Medellín', 2100000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-05', 'DEFINIDO', '2025-10-28', 'Calle 12 #5-60, Cali', 'Calle 20 #15-10, Popayán', 875000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-11-30', 'POR_DEFINIR', '2025-10-25', 'Av Santander #45-30, Manizales', 'Calle 80 #22-40, Bogotá', 1250000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-02-10', 'DEFINIDO', '2025-11-02', 'Carrera 10 #14-22, Armenia', 'Calle 6 #8-45, Cali', 3200000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-20', 'POR_DEFINIR', '2025-11-02', 'Calle 5 #9-55, Neiva', 'Carrera 2 #18-30, Pasto', 960000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-25', 'DEFINIDO', '2025-11-02', 'Av 9 #45-60, Medellín', 'Calle 12 #6-10, Bucaramanga', 2750000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-31', 'POR_DEFINIR', '2025-10-30', 'Calle 15 #8-22, Popayán', 'Carrera 5 #20-15, Pereira', 1850000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-03-10', 'DEFINIDO', '2025-11-02', 'Carrera 8 #10-18, Cali', 'Calle 33 #9-70, Bogotá', 4500000.00);
-INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-05', 'POR_DEFINIR', '2025-10-29', 'Calle 25 #7-44, Tunja', 'Av Bolívar #50-12, Popayán', 1100000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-15', 'DISPONIBLE', '2025-11-02', 'Calle 10 #12-30, Popayán', 'Carrera 8 #14-20, Cali', 1500000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-10', 'NO_DISPONIBLE', '2025-11-01', 'Cra 7 #8-20, Bogotá', 'Av 3N #25-45, Medellín', 2100000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-05', 'DISPONIBLE', '2025-10-28', 'Calle 12 #5-60, Cali', 'Calle 20 #15-10, Popayán', 875000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-11-30', 'NO_DISPONIBLE', '2025-10-25', 'Av Santander #45-30, Manizales', 'Calle 80 #22-40, Bogotá', 1250000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-02-10', 'DISPONIBLE', '2025-11-02', 'Carrera 10 #14-22, Armenia', 'Calle 6 #8-45, Cali', 3200000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-20', 'NO_DISPONIBLE', '2025-11-02', 'Calle 5 #9-55, Neiva', 'Carrera 2 #18-30, Pasto', 960000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-25', 'VENCIDA', '2025-11-02', 'Av 9 #45-60, Medellín', 'Calle 12 #6-10, Bucaramanga', 2750000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2025-12-31', 'VENCIDA', '2025-10-30', 'Calle 15 #8-22, Popayán', 'Carrera 5 #20-15, Pereira', 1850000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-03-10', 'NO_DISPONIBLE', '2025-11-02', 'Carrera 8 #10-18, Cali', 'Calle 33 #9-70, Bogotá', 4500000.00);
+INSERT INTO Facturas (fechaVencimiento, estado, fechaCreacion, dirFacura, dirEnvio, total) VALUES ('2026-01-05', 'VENCIDA', '2025-10-29', 'Calle 25 #7-44, Tunja', 'Av Bolívar #50-12, Popayán', 1100000.00);
 
 INSERT INTO Inversores (nombreInversor, cedulaInversor, tipoPersona) VALUES ('Carlos Pérez', '1001234567', 'NATURAL');
 INSERT INTO Inversores (nombreInversor, cedulaInversor, tipoPersona) VALUES ('Inversiones Los Andes S.A.', '900456789-1', 'JURIDICA');
