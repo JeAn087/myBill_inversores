@@ -11,7 +11,7 @@ import com.unicauca.edu.mybill.inversores.Infraestructura.Input.DTORespuesta.DTO
  * @author Jeison Andrés Vallejo Gómez
  */
 
-@Component
+@Component("empresa InfraMapper")
 public class EmpresaMapper {
 
     public Empresa empresaDTOPeticionaEmpresa(DTOEmpresaPeticion prmDtoEmpresaPeticion)
@@ -27,7 +27,7 @@ public class EmpresaMapper {
         empresaReturn.setCelular(prmDtoEmpresaPeticion.getCelular());
         empresaReturn.setEmail(prmDtoEmpresaPeticion.getEmail());
         empresaReturn.setNumeroCuenta(prmDtoEmpresaPeticion.getNumeroCuenta());
-        empresaReturn.setRazonSocial(prmDtoEmpresaPeticion.getRazonSocial());
+        empresaReturn.setEmpresaName(prmDtoEmpresaPeticion.getEmpresaName());
 
         return empresaReturn;
     }
@@ -45,7 +45,7 @@ public class EmpresaMapper {
         dtoEmpresaRespuestaReturn.setCelular(prmEmpresa.getCelular());
         dtoEmpresaRespuestaReturn.setEmail(prmEmpresa.getEmail());
         dtoEmpresaRespuestaReturn.setNumeroCuenta(prmEmpresa.getNumeroCuenta());
-        dtoEmpresaRespuestaReturn.setRazonSocial(prmEmpresa.getRazonSocial());
+        dtoEmpresaRespuestaReturn.setEmpresaName(prmEmpresa.getEmpresaName());
 
         return dtoEmpresaRespuestaReturn;
     }

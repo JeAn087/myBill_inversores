@@ -14,7 +14,7 @@ import com.unicauca.edu.mybill.inversores.Infraestructura.Input.DTORespuesta.DTO
  * @author Jeison Andrés Vallejo Gómez
  */
 
-@Component
+@Component("facturaInfraMapper")
 public class FacturaMapper {
 
     /**
@@ -58,6 +58,8 @@ public class FacturaMapper {
         DTOFacturaRespuesta.setDirFacura(prmFactura.getDirFacura());
         DTOFacturaRespuesta.setDirEnvio(prmFactura.getDirEnvio());
         DTOFacturaRespuesta.setTotal(prmFactura.getTotal());
+        DTOFacturaRespuesta.setEmpresaEmisoraName(prmFactura.getEmpresaEmisoraName());
+        DTOFacturaRespuesta.setEmpresaPagadoraName(prmFactura.getEmpresaPagadoraName());
 
         return DTOFacturaRespuesta;
     }

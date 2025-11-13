@@ -24,6 +24,5 @@ public class DTOEmpresaPeticion {
 
     private String numeroCuenta;
 
-    private String razonSocial;
-
+    private String empresaName;
 }

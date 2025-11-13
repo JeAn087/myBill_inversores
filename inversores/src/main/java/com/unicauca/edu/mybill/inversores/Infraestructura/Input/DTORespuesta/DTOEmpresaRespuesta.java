@@ -24,6 +24,5 @@ public class DTOEmpresaRespuesta {
 
     private String numeroCuenta;
 
-    private String razonSocial;
-
+    private String empresaName;
 }

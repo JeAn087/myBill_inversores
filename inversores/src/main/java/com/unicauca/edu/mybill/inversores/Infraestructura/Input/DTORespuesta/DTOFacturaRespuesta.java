@@ -26,4 +26,7 @@ public class DTOFacturaRespuesta {
 
     private Double total;
 
+    private String empresaEmisoraName;
+
+    private String empresaPagadoraName;
 }

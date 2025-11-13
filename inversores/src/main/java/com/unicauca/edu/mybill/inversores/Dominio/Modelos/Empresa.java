@@ -28,6 +28,6 @@ public class Empresa {
 
     private String numeroCuenta;
 
-    private String razonSocial;
+    private String empresaName;
 
 }

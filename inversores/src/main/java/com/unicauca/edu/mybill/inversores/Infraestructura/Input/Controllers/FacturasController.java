@@ -42,7 +42,4 @@ public class FacturasController {
         ResponseEntity<DTOFacturaRespuesta> response = new ResponseEntity<>(facturaReturn, HttpStatus.OK);
         return response;
     }
-    
-    
-
 }

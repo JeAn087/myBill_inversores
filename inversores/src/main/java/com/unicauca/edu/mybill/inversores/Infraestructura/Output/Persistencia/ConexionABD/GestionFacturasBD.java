@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.modelmapper.ModelMapper;
 import org.modelmapper.TypeToken;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import com.unicauca.edu.mybill.inversores.Aplicacion.Output.DomGestionFacturas;
@@ -17,13 +18,15 @@ public class GestionFacturasBD implements DomGestionFacturas {
     private final FacturasRepository atrFacturaRespository;
     private final ModelMapper facturaMapper;
 
-    public GestionFacturasBD(FacturasRepository atrFacturaRespository, ModelMapper facturaMapper) {
+    public GestionFacturasBD(FacturasRepository atrFacturaRespository, @Qualifier("facturaModelMapper") ModelMapper facturaMapper) {
         this.atrFacturaRespository = atrFacturaRespository;
         this.facturaMapper = facturaMapper;
     }
 
     @Override
     public Factura getFacturaById(Long id) {
+        if (id == null) throw new IllegalArgumentException("El id de la empresa no puede ser nulo");
+        
         FacturaEntity objFacturaOnDB = this.atrFacturaRespository.findById(id)
         .orElseThrow(() -> new RuntimeException("No se ha encontrado la factura con el ID: "+id));
         Factura facturaReturn = this.facturaMapper.map(objFacturaOnDB, Factura.class);

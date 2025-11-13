@@ -31,4 +31,8 @@ public class Factura {
 
     private Double total;
 
+    private String empresaEmisoraName;
+
+    private String empresaPagadoraName;
+
 }

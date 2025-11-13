@@ -31,6 +31,108 @@
 				}
 			],
 			"description": "Lista de todos los métodos relacionados a las facturas del micro de inversores"
+		},
+		{
+			"name": "Empresas",
+			"item": [
+				{
+					"name": "Obtener empresa con NIt",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/api/empresas/getEmpresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"empresas",
+								"getEmpresa",
+								"1"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener empresa con patrón de búsqueda",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/api/empresas/buscar?nombre=t",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"empresas",
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "nombre",
+									"value": "t"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFacturasEmitidasDeEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/api/empresas/1/facturasEmitidas",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"empresas",
+								"1",
+								"facturasEmitidas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFacturasPorPagarDeEmpresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9090/api/empresas/1/facturasPorPagar",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"empresas",
+								"1",
+								"facturasPorPagar"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "Todos los endpoints referentes al controlador de empresas"
 		}
 	]
 }
